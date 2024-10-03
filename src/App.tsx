@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import WordSearch from './WordSearch';
 
 const App: React.FC = () => {
   const [name, setName] = useState('');
@@ -43,6 +44,7 @@ const App: React.FC = () => {
           <button type="submit">Enter</button>
         </form>
       )}
+    <WordSearch height={100} width={100} requiredWords={["Hack4Impact"]} />
     </div>
   );
 };
